@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+
+    <div class="flex justify-between items-center py-4">
+        <h1 class="text-2xl font-bold px-4">GoEz</h1>
+    </div>
+    <div class="container ml-[13%] px-4">
+    <div class="flex">
+        <div class="w-[60%]">
+            <h2 class="text-xl font-semibold">Shipping</h2>
+            <form class="mt-4">
+                <div class="mb-4">
+                    <label for="first-name" class="block text-white text-sm font-medium text-gray-700">First Name</label>
+                    <input type="text" name="first-name" id="first-name" class="mt-1 block w-[40%] rounded-md border-gray-300 shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" required>
+                </div>
+                <div class="mb-4">
+                    <label for="last-name" class="block text-white text-sm font-medium text-gray-700">Last Name</label>
+                    <input type="text" name="last-name" id="last-name" class="mt-1 block w-[40%] rounded-md border-gray-300 shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" required>
+                </div>
+                <div class="mb-4">
+                    <label for="address" class="block text-white text-sm font-medium text-gray-700">Address</label>
+                    <textarea id="address" name="address" rows="3" class="mt-1 block w-[40%] rounded-md border-gray-300 shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" required></textarea>
+                </div>
+                <div class="mb-4">
+                    <label for="pincode" class="block text-white text-sm font-medium text-gray-700">Pincode</label>
+                    <input type="text" name="pincode" id="pincode" class="mt-1 block w-[40%] rounded-md border-gray-300 shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" required>
+                </div>
+                <div class="mb-4">
+                    <label for="country" class="block text-white text-sm font-medium text-gray-700">Country</label>
+                    <select id="country" name="country" class="mt-1 block w-[40%] rounded-md border-gray-300 shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" required>
+                        <option value="">Select a country</option>
+                        <!-- Options will be dynamically generated -->
+                    </select>
+                </div>
+                <button type="submit" class="w-[40%] flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-black hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">Continue</button>
+            </form>
+        </div>
+        <div class="w-[40%] px-10">
+            <h2 class="text-xl font-semibold">Product Details</h2>
+            <div class=" detail mt-4">
+                <h1>Product 1:<span id="product-price"> $10.00</span></h1>
+                <br>
+                <p>GST Charge: 1.2%</p>
+                <p>Delivery Charge: $1</p>
+                <br>
+                <h3 class="text-[20px]">Total Amount:<span id="total-amount"> $11.20</span></h3>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
